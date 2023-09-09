@@ -84,6 +84,53 @@ button:hover{
     background-color: rgb(192, 147, 235);
     color: white;
 }
-#createPage{
-    display: none;
+.createPage{
+    /* display: none; */
+    width: 50%;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    left: 25%;
+    padding-top: 40px;
+    display: none;    /*use in jss*/
+    /* transition: 2s; */
+    z-index: 9;
+}
+.showCreatePage{
+    display: block;
+}
+.createPage span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-right: 40px;
+    cursor: pointer;
+    color: blue;
+    font-size: 30px;
+    
+}
+.createPage input{
+    width: 100%;
+    padding: 10px;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    /* transition: 1s; */
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
 }
